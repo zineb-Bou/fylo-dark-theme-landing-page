@@ -1,0 +1,37 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+ */
+/* Variables  */
+:root {
+  /* Primary */
+  /* (intro and email sign up background) */
+  --dark-blue-intero-bg: hsl(217, 28%, 15%);
+  /* (main background) */
+  --dark-blue-main-bg: hsl(218, 28%, 13%);
+  /* (footer background) */
+  --dark-blue-footer-bg: hsl(216, 53%, 9%);
+  /* (testimonials background) */
+  --dark-blue-testimonial-bg: hsl(219, 30%, 18%);
+
+  /*  Accent */
+  /* (inside call-to-action gradient) */
+  --Cyan: hsl(176, 68%, 64%);
+  /* (inside call-to-action gradient) */
+  --Blue: hsl(198, 60%, 50%);
+  /* (error) */
+  --Light-Red: hsl(0, 100%, 63%);
+  /*  Neutral */
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-blue-intero-bg);
+}
