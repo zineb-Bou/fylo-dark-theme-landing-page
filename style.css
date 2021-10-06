@@ -55,12 +55,10 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  border: 1px solid red;
   margin-top: 32px;
 }
 .top-nav {
   min-width: 200px;
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -101,6 +99,7 @@ body {
   object-fit: cover;
   width: 90%;
   max-width: 500px;
+  min-width: 380px;
   position: absolute;
   top: -400px;
 }
@@ -118,7 +117,7 @@ body {
   color: var(--White);
   text-align: center;
   margin: 0;
-  margin-top: -50px;
+  margin-top: -10px;
   width: 70%;
 }
 
@@ -209,14 +208,11 @@ body {
   object-fit: cover;
   width: 90%;
   max-width: 500px;
-  /* position: absolute;
-  top: -400px; */
+  min-width: 380px;
 }
 .our-goal-section__content {
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
 }
 .our-goal-section__content__title {
   font-family: 'Raleway', sans-serif;
@@ -266,6 +262,7 @@ body {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   row-gap: 50px;
+  place-items: center;
 }
 .testimonial-section__card {
   max-width: 500px;
@@ -334,16 +331,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .email-section {
   background-color: var(--dark-blue-main-bg);
   border-radius: 5px;
   width: 90%;
+  max-width: 800px;
   align-self: center;
   border-radius: 5px;
   padding: 40px 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px -3px,
-    rgba(0, 0, 0, 0.05) 0px 5px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-top: -400px;
   display: flex;
   flex-direction: column;
@@ -367,6 +365,7 @@ body {
   margin-top: 0;
   margin-top: 20px;
   width: 90%;
+  max-width: 500px;
   line-height: 24px;
 }
 .form {
@@ -432,6 +431,8 @@ body {
 .info-section__contact {
   grid-column: 1/2;
   grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
 }
 .info-section__contact span {
   display: inline-block;
@@ -490,8 +491,8 @@ body {
   justify-self: center;
 }
 
-/* Set style for desktop screens */
-/* @media (min-width: 800px) {
+/* Set style for desktop screens  */
+@media (min-width: 850px) {
   .main {
     margin-top: 600px;
   }
@@ -509,21 +510,72 @@ body {
   }
 
   /* offers section */
-/* .offers-section {
+  .offers-section {
     margin-top: 200px;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 50px;
   }
   /* our goals section */
-/* .our-goal-section {
+  .our-goal-section {
     margin-top: 150px;
     flex-direction: row;
     justify-content: space-between;
     gap: 80px;
   }
   /* testimonial-section */
-/* .testimonial-section {
+  .testimonial-section {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
   }
-} */
+
+  /* footer */
+  .form {
+    flex-direction: row;
+  }
+  .form .email {
+    margin-bottom: 0;
+    margin-right: 32px;
+    width: 400px;
+  }
+
+  /* footer -the infor section */
+
+  .info-section {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
+  .info-section .logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .info-section__location {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 0;
+  }
+
+  .info-section__contact {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    max-width: 200px;
+  }
+  .info-section__contact .info-section__contact__phone-number {
+    margin-top: 0;
+  }
+  .bottom-nav-1 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: center;
+  }
+  .bottom-nav-2 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    justify-self: center;
+  }
+
+  .Social-media-list {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    margin-top: 0;
+  }
+}
